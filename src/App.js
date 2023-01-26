@@ -6,7 +6,6 @@ import Projets from "./scenes/Projets";
 import Contact from "./scenes/Contact";
 import Footer from "./scenes/Footer";
 import { useEffect, useState } from "react";
-import LineGradient from "./components/LineGradient";
 import useMediaQuery from "./hooks/useMediaQuery";
 
 function App() {
@@ -24,7 +23,7 @@ function App() {
     };
     window.addEventListener("scroll", handleScroll);
     return () => window.removeEventListener("scroll", handleScroll);
-  }, []);
+  }, );
 
   return (
     <div className="app bg-deep-blue">
