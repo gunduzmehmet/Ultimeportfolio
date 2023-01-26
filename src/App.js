@@ -17,7 +17,7 @@ function App() {
     const handleScroll = () => {
       if (window.scrollY === 0) {
         setIsTopOfPage(true);
-        selectedPage("home")
+        setSelectedPage("home")
       }
       if (window.scrollY > 600) setIsTopOfPage(false);
     };
